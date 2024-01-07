@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #3498db;
+    --default-text-color: #333;
+    --default-background-color: #fff;
+    --default-border-radius: 4px;
+    --default-padding: 10px;
+    --default-font-size: 16px;
+    --focus-background: #ecf0f1 ;
+}
+
+.form-container{
+    display: flex;
+    margin-top: 23%;
+    justify-content: center;
+    gap: 5px;
+}
+
+.input-field {
+    padding: var(--default-padding);
+    font-size: var(--default-font-size);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--default-border-radius);
+    color: var(--default-text-color);
+    outline: none;
+    background-color: var(--focus-background);
+}
+
+.input-field:hover {
+    scale: 0.9;
+    transition: all 200ms;
+}
+
+.submit-button {
+    padding: var(--default-padding);
+    font-size: var(--default-font-size);
+    border: none;
+    border-radius: var(--default-border-radius);
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
